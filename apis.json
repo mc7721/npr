@@ -1,0 +1,175 @@
+{
+    "name": "NPR",
+    "description": "NPR delivers breaking national and world news. Also top stories from business, politics, health, science, technology, music, arts and culture. Subscribe to podcasts and RSS feeds.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/141-npr.jpg",
+    "tags": [
+        "api provider",
+        "broadcasts",
+        "general data",
+        "getting started example",
+        "have api",
+        "have swagger",
+        "new",
+        "news",
+        "pedestal",
+        "radio",
+        "relative data",
+        "service api",
+        "streams"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/npr\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "NPR One API Reference",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/141-npr.jpg",
+            "humanURL": "http:\/\/npr.org",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/npr-one-api-reference.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/npr-one-api-reference-openapi.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/npr-one-api-reference-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base",
+            "url": "http:\/\/api.npr.org\/"
+        },
+        {
+            "type": "Codecademy",
+            "url": "http:\/\/www.codecademy.com\/tracks\/npr"
+        },
+        {
+            "type": "Contact Form",
+            "url": "https:\/\/www.npr.org\/programs\/all-things-considered\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/npr"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/npr"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/dev.npr.org\/"
+        },
+        {
+            "type": "Documentation",
+            "url": "http:\/\/dev.npr.org\/#accessing-the-api"
+        },
+        {
+            "type": "Email",
+            "url": "permissions@npr.org"
+        },
+        {
+            "type": "Email",
+            "url": "ogcstaff@npr.org"
+        },
+        {
+            "type": "Email",
+            "url": "employment@npr.org"
+        },
+        {
+            "type": "Email",
+            "url": "careers@npr.org"
+        },
+        {
+            "type": "Email",
+            "url": "kroc@npr.org"
+        },
+        {
+            "type": "Email",
+            "url": "mediarelations@npr.org"
+        },
+        {
+            "type": "Email",
+            "url": "sponsorship@npr.org"
+        },
+        {
+            "type": "Email",
+            "url": "ashamblin@npr.org"
+        },
+        {
+            "type": "Email",
+            "url": "giving@npr.org"
+        },
+        {
+            "type": "Email",
+            "url": "giftplanning@npr.org"
+        },
+        {
+            "type": "Email",
+            "url": "NPRDonorCommunications@npr.org"
+        },
+        {
+            "type": "Getting Started",
+            "url": "http:\/\/dev.npr.org\/#quick-start"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/npr"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/141-2019-09-04-10-38-27.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/141-2019-09-03-13-18-21.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/141-2019-09-03-13-18-45.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/141-2019-09-03-13-19-06.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/141-2019-09-03-13-31-00.json"
+        },
+        {
+            "type": "Registration",
+            "url": "http:\/\/www.npr.org\/templates\/reg\/"
+        },
+        {
+            "type": "Terms of Service",
+            "url": "http:\/\/www.npr.org\/about-npr\/179876898\/terms-of-use"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/NPR"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/NPRTechTeam"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/npr.org"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.npr.org"
+        }
+    ]
+}
