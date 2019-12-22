@@ -1,5 +1,5 @@
 {
-    "id": "6e6dd148db709c90f403dda2ba137f73",
+    "id": "449a372e484e7bed1b884998866a2c03",
     "name": "NPR One API Reference",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "8d69066017b8e649f188f6f05e003bf4",
+            "id": "a00781f90ce762a3a4f488cee3f88439",
             "name": "Show a web-based login\/signup form to a user",
             "url": "httpsapi.npr.org\/\/authorization\/v2\/authorize",
             "description": "If the parameters passed to this endpoint are correct, it will redirect to `npr.org\/oauth2\/login` for the user to complete the sign-in.\n\nCurrently acceptable values for `scope` are any combination of the following:\n- `identity.readonly` - for read-only access to the Identity Service\n- `identity.write` - for write access to the Identity Service\n- `listening.readonly` - for read-only access to the Listening Service\n- `listening.write` - for write access to the Listening Service\n- `localactivation`",
@@ -65,11 +65,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "a38690f2f92bc158a41769b9c9650719",
+            "id": "13eacb435f20b1129d2215873abfc42a",
             "name": "Initiate an OAuth2 login flow for limited input devices",
             "url": "httpsapi.npr.org\/\/authorization\/v2\/device",
             "description": "This flow should only be used by clients who cannot show a native webview or do not have advanced input controls. It is an alternative to `GET \/authorization\/v2\/authorize`.\n\nThird-party clients will need to use one or the other of these two endpoints, but they will generally not use both.",
@@ -110,11 +110,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "998ddc41d3be5248f0f84700ecf5c68e",
+            "id": "36f7479183b3c5618740db53df5ead45",
             "name": "Create a new OAuth2 access token",
             "url": "httpsapi.npr.org\/\/authorization\/v2\/token",
             "description": "Please be aware that the required parameters are contingent on the `grant_type` that you select.\n\nFor the `authorization_code` grant type, you are **required** to pass in the `code` and `redirect_uri` parameters. `service`, `username` and `password` parameters will be ignored.\n\nFor the `client_credentials` grant type, you do not need to pass in any additional parameters beyond the basic requirements. `code`, `redirect_uri`, `service`, `username` and `password` parameters will be ignored.\n\nFor th",
@@ -211,11 +211,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "0802ab6609aec1aedad75ecac0dbe1cd",
+            "id": "aa360acfa6020a7664294b745ed76fa4",
             "name": "Revoke an existing OAuth2 access token",
             "url": "httpsapi.npr.org\/\/authorization\/v2\/token\/revoke",
             "description": "Our implementation follows the proposed IETF specification [RFC-7009](https:\/\/tools.ietf.org\/html\/rfc7009).\n\nIf your client application offers the ability to for a logged-in user to log out, and you have access to a long-lived\n`client_credentials` token (i.e. you have generated one that you are storing securely for the lifetime of the entire app\ninstall), we suggest (but do not require) that you call this endpoint and revoke the access token belonging to the\nlogged-in user as part of your logout",
@@ -256,11 +256,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "000dacc2cf950d6e2819efcb654a920b",
+            "id": "a1db5e2135c583b2c713ad1bf9081e78",
             "name": "Update the following status of the logged-in user for a particular aggregation",
             "url": "httpsapi.npr.org\/\/identity\/v2\/following",
             "description": "After a successful call, this returns a User document with an updated list of affiliations.",
@@ -287,11 +287,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "c7469dd207fe3041effbc13ca36100b5",
+            "id": "308e4f32708a4b479e0acffb99576b36",
             "name": "Update the logged-in user's favorite station(s)",
             "url": "httpsapi.npr.org\/\/identity\/v2\/stations",
             "description": "Right now, only the primary station can be changed. Previously selected stations will not be deleted, but the new station will be moved to first in the array.",
@@ -318,11 +318,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "b6df7581e65ef19a5d6d5b28d438517a",
+            "id": "a27c0a5067a6df8a786e7da4ad9a3446",
             "name": "Get the latest state information about the logged-in user",
             "url": "httpsapi.npr.org\/\/identity\/v2\/user",
             "description": "After a successful login, the client should send a `GET` call approximately once an hour to refresh the user data.",
@@ -341,11 +341,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "20733f7f63b2fe3274e3f3944b61c79d",
+            "id": "09caf879f3b71e1a0df629564a21604d",
             "name": "Copy listening data from a temporary user account to the logged-in user's account",
             "url": "httpsapi.npr.org\/\/identity\/v2\/user\/inherit",
             "description": "This can and should only be used by clients who have access to the `temporary_user` grant type.\n    Third-party developers do not have access to this grant type by default, and will not need this endpoint.",
@@ -372,11 +372,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "8fb454de11c2ec90b922b4f594ee7ade",
+            "id": "5827950fc297fdba91d6685e1337e746",
             "name": "Get a set of recommendations for an aggregation",
             "url": "httpsapi.npr.org\/\/listening\/v2\/aggregation\/{aggId}\/recommendations",
             "description": "This endpoint provides a list of recent audio items associated with the aggregation along with metadata about the aggregation.",
@@ -410,11 +410,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "6b06ce3961248cf1e294f02e30b1f093",
+            "id": "9436a42f3967b265166e765a35f38819",
             "name": "Get the list of available channels",
             "url": "httpsapi.npr.org\/\/listening\/v2\/channels",
             "description": "These channels allow the user to specify a focus for the content returned in the recommendations endpoint.",
@@ -441,11 +441,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "844f2eaa416f2e79fc73a941ff37bbe8",
+            "id": "103c9647d30a25d3e974f3c7ead09de5",
             "name": "Get recent ratings the logged-in user has submitted",
             "url": "httpsapi.npr.org\/\/listening\/v2\/history",
             "description": "This endpoint provides the list of recently-rated audio recommendations that the logged-in user has consumed. Some rated recommendations are filtered, such as sponsorship and donation.",
@@ -464,11 +464,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "bda09f72db2301ae2b3b669ebd200bf3",
+            "id": "2ecc43f2f6e530a033ea20648dfb6e6b",
             "name": "Get a list of recommendations from a category of content from an organization",
             "url": "httpsapi.npr.org\/\/listening\/v2\/organizations\/{orgId}\/categories\/{category}\/recommendations",
             "description": "This endpoint provides a list of recommendations from a category of content from  an organization.",
@@ -502,11 +502,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "cbac67ee9eb6a199daefd671c9711922",
+            "id": "330664f80a466d703ee975bdd631f5cd",
             "name": "Get a variety of details about an organization including various lists of recent audio items",
             "url": "httpsapi.npr.org\/\/listening\/v2\/organizations\/{orgId}\/recommendations",
             "description": "This endpoint provides a variety of details about an organization including various lists of recent audio items.",
@@ -533,11 +533,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "36a01cc1cacc27fde34c543af876ec2d",
+            "id": "82da41cbe3516126d2eb10fe8f369423",
             "name": "Retrieve the most recent promo audio heard by the logged-in user",
             "url": "httpsapi.npr.org\/\/listening\/v2\/promo\/recommendations",
             "description": "Gets the most recently played promo for which the user has neither tapped through the promo or listened to the target story.",
@@ -556,11 +556,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "73ce1b31ea1f8c8bb7a195b149030c34",
+            "id": "e6ca269557da88507f4143d4aca9d619",
             "name": "Collect new ratings for media previously recommended to the logged-in user",
             "url": "httpsapi.npr.org\/\/listening\/v2\/ratings",
             "description": "This endpoint is the main mechanism for providing feedback from the user to NPR about the recommendations that are obtained from `GET \/listening\/v2\/recommendations`.\n\nA fully-populated link to this endpoint is returned with each individual recommendation and is located in the AudioItemDocument under the `links['recommendations']` object. The query parameters in this link should not be modified.\nBe sure to copy and send back the entire ratings object (RatingData), as new fields may be added to it",
@@ -594,11 +594,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "fdce358cbd3049e93524c3790055a010",
+            "id": "cbee1f0f39516808283779417998cfaa",
             "name": "Get a list of media for the logged-in user from NPR's recommendation engine",
             "url": "httpsapi.npr.org\/\/listening\/v2\/recommendations",
             "description": "This endpoint returns a list of audio recommendations. It is designed to be used for an initial list of recommendations, and then `GET \/listening\/v2\/ratings?recommend=true` should be used for subsequent requests for recommendations.\n\nA fully-populated link to the ratings endpoint is returned with each individual recommendation and is located in the AudioItemDocument under the `links['recommendations']` object. The query parameters in this link should not be modified.\nBe sure to copy and send bac",
@@ -632,11 +632,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "bd3acec41dbb7808ee8334abfaa8609d",
+            "id": "eabdfff67d08baf05b7921e65e396585",
             "name": "Get a list of recent audio and aggregation items associated with search terms",
             "url": "httpsapi.npr.org\/\/listening\/v2\/search\/recommendations",
             "description": "In the schema shown below, SearchItemDocument is not an actual type of returned object; the object returned by a search will be either an AggregationAudioItemListDocument or an AudioItemDocument.",
@@ -663,11 +663,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "2782e8a11984cf416fd822fc615c2111",
+            "id": "e0377c960dbeff7007e871467f2e1002",
             "name": "Send a donation email to the logged-in user (only on request)",
             "url": "httpsapi.npr.org\/\/localactivation\/v2\/donate_email",
             "description": "This will send a station-specific donation email to the logged-in user.",
@@ -686,11 +686,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "0cd4c972548a6395eb2d93ffeae383e0",
+            "id": "0924e3c5068aaed4116930dcb2ef6886",
             "name": "Request DAAST sponsorship units",
             "url": "httpsapi.npr.org\/\/sponsorship\/v2\/ads",
             "description": "**Not** for use by NPR One clients (for whom sponsorship is already integrated into the Listening Service), this endpoint is designed to be used by our other client applications to request sponsorship on behalf of a user. Sponsorship units are returned in the form of DAAST XML. It is worth noting that this endpoint attempts to always return XML, even in the case of exceptions.\n\nThe default behavior of this endpoint is asynchronous; on an initial request, a call to our external sponsorship provid",
@@ -724,11 +724,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "26d1a44b54fad3c84cfd3035bcf5c72e",
+            "id": "c8205e458d7864d966f4b4f24987f517",
             "name": "Record tracking data for DAAST sponsorship units",
             "url": "httpsapi.npr.org\/\/sponsorship\/v2\/ads",
             "description": "**Not** for use by NPR One clients (for whom sponsorship is already integrated into the Listening Service), this endpoint is designed to be used by our other client applications to submit tracking information for sponsorship units obtained from the `GET \/sponsorship\/v2\/ads` endpoint.\n\nThe tracking information should be submitted in the body of the request in the form of a JSON object following the Collection.Doc+JSON specification.",
@@ -755,11 +755,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "84762a9a8440b559ffda9f43ccd4acb7",
+            "id": "8c0dfcb937ecd1045eddaa265db84ae8",
             "name": "List stations close to you or filter by search criteria",
             "url": "httpsapi.npr.org\/\/stationfinder\/v3\/stations",
             "description": "This endpoint has two main use cases:\n\n- If no query parameters passed in, it returns a list of stations that are geographically closest to the calling client (based on GeoIP information)\n- If one or more query parameters are passed in, it performs a search of NPR stations that match those search criteria (not taking into account the client's physical location)\n\nClients wanting to implement a 'Change Station' UI should use this endpoint to power their search. In most cases, you'll want to build ",
@@ -814,11 +814,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         },
         {
-            "id": "7702a648c071d60cd61ff3121e7b789e",
+            "id": "15df681e4b899cf4e55bf3e311c3bac5",
             "name": "Retrieve metadata for the station with the given numeric ID",
             "url": "httpsapi.npr.org\/\/stationfinder\/v3\/stations\/{stationId}",
             "description": "This endpoint retrieves information about a given station, based on its numeric ID, which is consistent across all of NPR's APIs.\n\nA typical use case for this data is for clients who want to create a dropdown menu, modal\/pop-up or dedicated page displaying more information about the station the client is localized to, including, for example, links to the station's homepage and donation (pledge) page.",
@@ -845,7 +845,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6e6dd148db709c90f403dda2ba137f73",
+            "collectionId": "449a372e484e7bed1b884998866a2c03",
             "rawModeData": ""
         }
     ]
